@@ -1,0 +1,309 @@
+:root {
+    --accent-color: #4D5AE5;
+    --title-text-color: #2E2F42;
+    --text-color: #434455;
+    --primary-cloud-color: #F4F4FD;
+    --secondary-ocean-color: #404BBF;
+    --first-main-color: #FFFFFF;
+    --second-main-color: #E7E9FC;
+    }
+body {
+    background-color: var(--first-main-color);
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+}
+/* fmvog */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+h1,h2,h3,ul,p {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px
+}
+img {
+    display: block;
+    margin-bottom: 32px;
+}
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+/* header */
+.hdr {
+    display: flex;
+    width: 1158px;
+}
+.logo {
+    margin-right: 76px;
+
+    color: var(--accent-color);
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.link {
+    text-decoration: none;
+}
+.header {
+    border-bottom: 1px solid var(--second-main-color)
+}
+.studio {
+    color: var(--title-text-color);
+}
+.link.menu {
+    padding: 24px 0;
+    color: var(--title-text-color);
+}
+.link.menu:hover ,
+.link.menu:focus {
+    color: var(--secondary-ocean-color);
+}
+.site-nav-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 24px;
+}
+.site-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-right: 332px;
+}
+.site-nav .link {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+.site-nav .link:hover ,
+.site-nav .link:focus {
+    color: var(--secondary-ocean-color);
+}
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+.contacts-box {
+    
+    font-style: normal;
+}
+.contacts {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+.contacts:hover ,
+.contacts:focus {
+    color: var(--secondary-ocean-color);
+}
+/* hero */
+.section.hero {
+    padding: 188px 0;
+    background-color: var(--title-text-color);
+}
+.hero-title {
+    max-width: 496px;
+    margin:0 auto 48px;
+
+    color: var(--first-main-color);
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+}
+.btn-hero {
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    padding: 16px 32px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 4px;
+
+    background-color: var(--accent-color);
+    color: var(--first-main-color);
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+}
+.btn-hero:hover ,
+.btn-hero:focus {
+    background-color: var(--secondary-ocean-color);
+    border: 1px solid transparent;
+}
+/* features*/
+.section.features {
+    margin: 0 auto;
+    padding: 120px 0;
+    width: 1128px;
+}
+.main.list {
+ display: flex;
+ flex-direction: row;
+ gap: 24px;
+ margin-bottom: 120px;
+}
+.main-list {
+    width: calc((100% - 72px) / 4);
+}
+
+/* doing */
+.section.doing {
+    padding-bottom: 120px;
+}
+.img.list {
+    display: flex;
+    gap: 24px;
+}
+.img-list {
+    width: calc((100% - 48px) / 3);
+}
+/* team */
+.section.team{
+    padding: 120px 0;
+    width: 1440px;
+    background-color: var(--primary-cloud-color);
+}
+.face.list {
+    display: flex;
+    gap: 24px;
+}
+.face-list {
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+
+    background-color: var(--first-main-color);
+}
+.person {
+    padding: 32px 16px;
+}
+.title-second {
+    margin-bottom: 72px;
+
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+.title-three {
+    margin-bottom: 8px;
+
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+.title-three.centr {
+    text-align: center;
+    margin-bottom: 8px;
+}
+.text.centr {
+    text-align: center;
+}
+.text {
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+/* footer */
+.footer {
+    padding: 100px 0;
+    background-color: var(--title-text-color);
+}
+.logo-ftr {
+    display: inline-block;
+    margin-bottom: 16px;
+
+    color: var(--accent-color);
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.studio-ftr {
+    color: var(--primary-cloud-color);
+}
+.footer-text {
+    max-width: 264px;
+
+    color: var(--primary-cloud-color);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+/* portfolio */
+.section-portfolio {
+    padding: 96px 0 120px;
+}
+.list.btn {
+     display: flex;
+     justify-content: center;
+     gap: 24px;
+     margin-bottom: 72px;
+ }
+.button {
+    padding: 12px 24px;
+    border: 1px solid var(--second-main-color);
+    border-radius: 4px;
+
+    font-family: "Roboto", sans-serif;
+    color: var(--accent-color);
+    background-color: var(--primary-cloud-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+}
+.button:hover ,
+.button:focus {
+    color: var(--first-main-color);
+    background-color: var(--secondary-ocean-color);
+    border: 1px solid transparent;
+} 
+.list.project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+.link.project {
+    width: calc((100% - 48px) / 3);
+}
+.project-name {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    margin-bottom: 8px;
+}
