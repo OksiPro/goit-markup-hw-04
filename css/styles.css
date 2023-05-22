@@ -6,6 +6,7 @@
     --secondary-ocean-color: #404BBF;
     --first-main-color: #FFFFFF;
     --second-main-color: #E7E9FC;
+    --grey-hero-color: #2E2F42;
     }
 body {
     background-color: var(--first-main-color);
@@ -29,7 +30,6 @@ h1,h2,h3,ul,p {
 }
 img {
     display: block;
-    margin-bottom: 32px;
 }
 .list {
     list-style: none;
@@ -97,7 +97,6 @@ img {
     color: var(--accent-color);
 }
 .contacts-box {
-    
     font-style: normal;
 }
 .contacts {
@@ -118,7 +117,10 @@ img {
 /* hero */
 .section.hero {
     padding: 188px 0;
-    background-color: var(--title-text-color);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+    url('../images/hero.jpg');
+    background-size: cover;
+    background-color: var(--grey-hero-color);
 }
 .hero-title {
     max-width: 496px;
@@ -152,6 +154,7 @@ img {
 .btn-hero:focus {
     background-color: var(--secondary-ocean-color);
     border: 1px solid transparent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 /* features*/
 .section.features {
@@ -161,12 +164,26 @@ img {
 }
 .main.list {
  display: flex;
- flex-direction: row;
+ flex-wrap: wrap;
  gap: 24px;
  margin-bottom: 120px;
 }
 .main-list {
     width: calc((100% - 72px) / 4);
+}
+.icon-ftr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 264px;
+    height: 112px;
+    background-color: var(--primary-cloud-color);
+}
+.icon-features {
+    
+    height: 64px;
+    width: 64px;
 }
 
 /* doing */
@@ -195,9 +212,31 @@ img {
     border-radius: 0px 0px 4px 4px;
 
     background-color: var(--first-main-color);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .person {
-    padding: 32px 16px;
+    padding: 0 16px 32px;
+}
+/* Social icon */
+.social.list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+.social-icn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+}
+.social-icon{
+    width: 16px;
+    height: 16px;
+    fill: var(--primary-cloud-color);
 }
 .title-second {
     margin-bottom: 72px;
@@ -211,6 +250,7 @@ img {
     text-transform: capitalize;
 }
 .title-three {
+    margin-top: 32px;
     margin-bottom: 8px;
 
     color: var(--title-text-color);
@@ -225,6 +265,7 @@ img {
 }
 .text.centr {
     text-align: center;
+    margin-bottom: 8px;
 }
 .text {
     color: var(--text-color);
@@ -232,11 +273,36 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
-
+/* customers */
+.section.customers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1128px;
+    margin: 120px 156px;
+}
+.customers.list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+    padding: 0;
+}
+.icon-customers {
+    width: 168px;
+    height: 88px;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+}
 /* footer */
 .footer {
+    display: flex;
     padding: 100px 0;
     background-color: var(--title-text-color);
+}
+.container.ftr {
+    margin-left: 156px;
 }
 .logo-ftr {
     display: inline-block;
@@ -260,6 +326,25 @@ img {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+}
+.media{
+    max-width: 264px;
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--first-main-color);
+}
+.media.list {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.media-icon {
+    width: 24px;
+    height: 24px;
+    fill: var(--primary-cloud-color);
 }
 /* portfolio */
 .section-portfolio {
@@ -290,6 +375,7 @@ img {
     color: var(--first-main-color);
     background-color: var(--secondary-ocean-color);
     border: 1px solid transparent;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 } 
 .list.project {
     display: flex;
@@ -305,5 +391,7 @@ img {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
-    margin-bottom: 8px;
+}
+.link.project:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
