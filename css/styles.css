@@ -321,7 +321,9 @@ img {
 .container.ftr {
     display: flex;
     align-items: baseline;
-    gap: 120px;
+}
+.ftr-first {
+    margin-right: 120px;
 }
 .logo-ftr {
     display: inline-block;
